@@ -12,6 +12,25 @@ namespace FindAndReplaceNS
       return result;
     }
 
+    public string FandRSingleWord(string sentence, string find, string replace)
+    {
+      string[] stringArray = sentence.Split(' ');
+
+      for(int i =0; i < stringArray.Length; i++)
+      {
+        // Console.WriteLine(stringArray[i]);
+        if (stringArray[i] == find)
+        {
+          Console.WriteLine(stringArray[i]);
+          Console.WriteLine(i);
+          Console.WriteLine(replace);
+          stringArray.SetValue(replace, i);
+        }
+      }
+      string stringHolder = String.Join(" ", stringArray);
+      return stringHolder;
+
+    }
 
   }
 }
