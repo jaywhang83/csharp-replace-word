@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors</title>
+<style>
+div label input {
+   margin-right:100px;
+}
+body {
+    font-family:sans-serif;
+}
+
+.ck-button {
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+}
+
+.ck-button:hover {
+    background:red;
+}
+
+.ck-button label {
+    float:left;
+    width:4.0em;
+}
+
+.ck-button label span {
+    text-align:center;
+    padding:3px 0px;
+    display:block;
+}
+
+.ck-button label input {
+    position:absolute;
+    top:-20px;
+}
+
+</style>
+</head>
+  <body>
+
+
+
+<h1>Play Rock, Paper, Scissors!</h1>
+
+<form class="userInput" action="/result" method="post">
+  <h3>Player 1</h3>
+  <!-- <button onClick ="rock" type="button" name="rock" value="rock">Rock</button>
+  <button type="button" name="p1" value="paper">Paper</button>
+  <button type="button" name="p1" value="scissors">Scissors</button> -->
+<div class="ck-button">
+  <label>
+  <input type="radio" name="p1" value="rock"><span>rock</span>
+  </label>
+</div>
+  <div class="ck-button">
+  <label>
+  <input type="radio" name="p1" value="paper"><span>paper</span>
+  </label>
+</div>
+<div class="ck-button">
+  <label>
+  <input type="radio" name="p1" value="scissors"><span>scissors</span>
+  </label>
+</div>
+  <h3>Player 2</h3>
+  <div class="ck-button">
+    <label>
+    <input type="radio" name="p2" value="rock"><span>rock</span>
+    </label>
+  </div>
+    <div class="ck-button">
+    <label>
+    <input type="radio" name="p2" value="paper"><span>paper</span>
+    </label>
+  </div>
+  <div class="ck-button">
+    <label>
+    <input type="radio" name="p2" value="scissors"><span>scissors</span>
+    </label>
+  </div>
+
+  <button type="submit" name="submit">Submit</button>
+</form>
+</body>
+</html>
